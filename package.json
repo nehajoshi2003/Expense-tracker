@@ -2,20 +2,21 @@
   "name": "expense-tracker",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nehajoshi2003.github.io/Expense-tracker/",
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^3.0.1",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
-  "start": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "deploy": "gh-pages -d dist"
-},
-
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+     "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -36,6 +37,8 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "gh-pages": "^6.3.0"
+    "@vitejs/plugin-react": "^4.3.4",
+    "gh-pages": "^6.3.0",
+    "vite": "^6.1.0"
   }
 }

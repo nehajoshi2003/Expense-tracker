@@ -3,7 +3,7 @@ import ExpenseTracker from "./components/expensetracker";
 function App() {
   return (
     <div className="app">
-      <h1>MONTHLY EXPENSE TRACKER</h1>
+      <h1>MONTHLY EXPENSES TRACKER</h1>
       <ExpenseTracker />
     </div>
   );
